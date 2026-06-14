@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lịch tập 4 tuần · Kate 🐾</title>
+<meta name="description" content="Lịch tập 4 tuần tăng cơ giảm mỡ cho Kate — link tìm kiếm YouTube luôn hoạt động.">
+<style>
+  :root{
+    --bg:#0f1117; --card:#171a23; --card2:#1d2130; --line:#2a2f3e;
+    --txt:#e8eaf0; --muted:#9aa1b2; --accent:#ff5da2; --accent2:#7c5cff;
+    --rest:#3aa66b; --chip:#232838;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#1a1f2e,#0f1117);color:var(--txt);}
+  .wrap{max-width:1000px;margin:0 auto;padding:28px 18px 60px;}
+  header{text-align:center;margin-bottom:8px}
+  h1{font-size:26px;margin:0 0 6px;background:linear-gradient(90deg,var(--accent),var(--accent2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:16px;text-align:center}
+  .actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+  .btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:13px;font-weight:700;
+    padding:9px 16px;border-radius:999px;border:1px solid var(--line);color:var(--txt);background:var(--chip);transition:.15s}
+  .btn:hover{border-color:var(--accent)}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));border-color:transparent;color:#fff}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:10px;padding:12px 16px;font-size:14px;color:var(--txt);margin-bottom:22px;line-height:1.55}
+  .note b{color:var(--accent)}
+  .tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+  .tab{background:var(--chip);border:1px solid var(--line);color:var(--muted);padding:9px 16px;
+    border-radius:999px;cursor:pointer;font-size:14px;font-weight:600;transition:.15s}
+  .tab:hover{color:var(--txt)}
+  .tab.active{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;border-color:transparent}
+  .week{display:none;animation:fade .25s ease}
+  .week.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .week-title{font-size:16px;font-weight:700;color:var(--accent2);margin:6px 0 16px;text-align:center;letter-spacing:.3px}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden}
+  .day-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:14px 16px;background:var(--card2)}
+  .day-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .daybadge{flex-shrink:0;width:42px;height:42px;border-radius:10px;display:flex;align-items:center;
+    justify-content:center;font-weight:800;font-size:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
+  .day-name{font-size:12px;color:var(--muted)}
+  .sess{font-size:15px;font-weight:700}
+  .dur{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent);background:rgba(255,93,162,.12);
+    padding:5px 10px;border-radius:999px;white-space:nowrap}
+  .vids{padding:6px 10px 12px}
+  .vid{display:flex;align-items:center;gap:12px;padding:11px 10px;border-radius:10px;text-decoration:none;
+    color:var(--txt);transition:.12s;border:1px solid transparent}
+  .vid:hover{background:var(--card2);border-color:var(--line)}
+  .vnum{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--chip);color:var(--muted);
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+  .vtitle{flex:1;font-size:14px;line-height:1.4}
+  .vplay{flex-shrink:0;color:var(--accent);font-size:12px;font-weight:700;display:flex;align-items:center;gap:5px}
+  .vdur{flex-shrink:0;font-size:12px;color:var(--muted)}
+  .rest{padding:18px 16px;color:var(--rest);font-weight:600;font-size:14px;display:flex;align-items:center;gap:10px}
+  .rest .daybadge{background:var(--rest)}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:26px}
+  @media(max-width:560px){.vdur{display:none}.vtitle{font-size:13px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🐾 LỊCH TẬP 4 TUẦN · KATE</h1>
+    <div class="sub">Tăng cơ · Giảm mỡ · Siết nét · 45–60 phút/buổi</div>
+    <div class="actions">
+      <a class="btn primary" href="workout-schedule-kate.ics" download>📅 Thêm vào lịch (.ics)</a>
+      <a class="btn" href="workout-schedule-kate.md">📄 Bản Markdown</a>
+    </div>
+  </header>
+
+  <div class="note">
+    <b>Cách dùng:</b> Mỗi bài tập là một <b>link tìm kiếm YouTube</b> — bấm vào sẽ mở trang kết quả đúng tên bài,
+    chị chọn video đầu tiên (kênh chính chủ) để tập. Link luôn sống, không bao giờ chết.
+    Tuần bắt đầu <b>Chủ Nhật</b>, nghỉ ngơi <b>Thứ 4</b>.
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div id="weeks"></div>
+
+  <footer>Chó Cỏ đồng hành cùng chị Kate — tập luyện hứng khởi, tràn năng lượng! 🐶🐾✨</footer>
+</div>
+
+<script>
+const DAYS = ["Chủ Nhật","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"];
+const V = {
+ pr_upper10:"Pamela Reif - 10 Min Upper Body + Booty Band",
+ pr_upper15:"Pamela Reif - 15 Min Complete Upper Body",
+ pr_upper20:"Pamela Reif - 20 Min Upper Body Bottles and Band",
+ pr_abs_arms12:"Pamela Reif - 12 Min Pretty Abs and Arms",
+ pr_booty15:"Pamela Reif - 15 Min Booty Workout Low Impact",
+ pr_legs20:"Pamela Reif - 20 Min Booty and Legs With Weights",
+ pr_glute10:"Pamela Reif - 10 Min Glute Bridge Burnout",
+ pr_bootypump10:"Pamela Reif - 10 Min Booty Pump Squat Free",
+ pr_full20:"Pamela Reif - 20 Min Intense Full Body Workout",
+ pr_absbooty30:"Pamela Reif - 30 Min Abs and Booty Workout",
+ ct_flatbelly10:"Chloe Ting - 10 Min Flat Belly Abs Workout",
+ ct_defined10:"Chloe Ting - 10 Min Abs Workout Defined Abs",
+ ct_getabs:"Chloe Ting - Get Abs in 2 Weeks Abs Challenge",
+ ct_lineabs:"Chloe Ting - 11 Line Abs Workout",
+ ct_fullhiit15:"Chloe Ting - 15 Min Full Body HIIT No Jumping",
+ nb_box15:"Nate Bower - 15 Min Boxing HIIT Workout",
+ nb_morning:"Nate Bower - 15 Min Morning Boxing Workout",
+ td_box15:"Teagan Dixon - 15 Min Cardio Boxing HIIT Workout",
+ ky_lover:"Kyra Pro - Taylor Swift Lover Era Dance Workout",
+ ky_1989:"Kyra Pro - Taylor Swift 1989 Walking Dance Workout",
+ ky_red:"Kyra Pro - Taylor Swift Red Era Dance Workout",
+ mf_tsparty:"MadFit - 15 Min Taylor Swift Dance Party Workout",
+ mf_midnights:"MadFit - Taylor Swift Midnights Dance Workout",
+ fm_workit:"The Fitness Marshall - Work It Missy Elliott Dance",
+ fm_levelup:"The Fitness Marshall - Level Up Ciara Dance",
+ mm_stretch15:"Mady Morrison - 15 Min Full Body Stretch",
+};
+const REST = ["Active Recovery","-",null];
+const SCHEDULE = [
+ ["TUẦN 1 · TĂNG SỨC BỀN & ĐỐT MỠ SIẾT CƠ (ROUND 1)",[
+   ["Upper Body & Core","~45 phút",[["pr_upper10","10 phút"],["pr_upper15","15 phút"],["ct_flatbelly10","10 phút"],["ct_defined10","10 phút"]]],
+   ["Boxing & Cardio HIIT","~45 phút",[["nb_box15","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]]],
+   ["Glutes & Lower Body + Stretch","~50 phút",[["pr_booty15","15 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]]],
+   REST,
+   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["mf_tsparty","15 phút"],["fm_workit","5 phút"]]],
+   ["Full Body HIIT & Strength","~55 phút",[["pr_full20","Tập 2 vòng = 40 phút"],["ct_fullhiit15","15 phút"]]],
+   ["Flexing & Dancing Mastery","~45 phút",[["ky_red","15 phút"],["ky_1989","15 phút"],["mm_stretch15","15 phút"]]],
+ ]],
+ ["TUẦN 2 · TẠO NÉT & PHÁT TRIỂN CƠ BẮP (ROUND 2)",[
+   ["Upper Body & Core","~52 phút",[["pr_upper20","20 phút"],["pr_abs_arms12","12 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]]],
+   ["Boxing & Cardio HIIT","~45 phút",[["nb_box15","Tập 2 vòng = 30 phút"],["nb_morning","15 phút"]]],
+   ["Glutes & Lower Body + Stretch","~45 phút",[["pr_glute10","10 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]]],
+   REST,
+   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["mf_midnights","10 phút"],["fm_levelup","Tập 2 vòng = 10 phút"]]],
+   ["Full Body HIIT & Strength","~56 phút",[["pr_absbooty30","30 phút"],["ct_getabs","11 phút"],["ct_fullhiit15","15 phút"]]],
+   ["Flexing & Dancing Mastery","~45 phút",[["mf_tsparty","15 phút"],["ky_red","15 phút"],["mm_stretch15","15 phút"]]],
+ ]],
+ ["TUẦN 3 · THỬ THÁCH NÂNG CAO & BÙNG NỔ THỂ LỰC (ROUND 3)",[
+   ["Upper Body & Core","~46 phút",[["pr_upper15","15 phút"],["pr_upper10","10 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]]],
+   ["Boxing & Cardio HIIT","~45 phút",[["td_box15","Tập 2 vòng = 30 phút"],["nb_box15","15 phút"]]],
+   ["Glutes & Lower Body + Stretch","~50 phút",[["pr_booty15","15 phút"],["pr_glute10","Tập 2 vòng = 20 phút"],["mm_stretch15","15 phút"]]],
+   REST,
+   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["ky_1989","15 phút"],["fm_workit","5 phút"]]],
+   ["Full Body HIIT & Strength","~50 phút",[["pr_full20","20 phút"],["pr_absbooty30","30 phút"]]],
+   ["Flexing & Dancing Mastery","~45 phút",[["mf_midnights","10 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]]],
+ ]],
+ ["TUẦN 4 · SIẾT CƠ ĐA TẦNG & TÁI CẤU TRÚC BODY (ROUND 4)",[
+   ["Upper Body & Core","~55 phút",[["pr_upper20","20 phút"],["pr_upper15","15 phút"],["ct_lineabs","10 phút"],["ct_defined10","10 phút"]]],
+   ["Boxing & Cardio HIIT","~45 phút",[["nb_morning","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]]],
+   ["Glutes & Lower Body + Stretch","~55 phút",[["pr_legs20","20 phút"],["pr_bootypump10","10 phút"],["pr_glute10","10 phút"],["mm_stretch15","15 phút"]]],
+   REST,
+   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["ky_red","15 phút"],["fm_levelup","5 phút"]]],
+   ["Full Body HIIT & Strength","~55 phút",[["pr_absbooty30","30 phút"],["pr_full20","20 phút"],["fm_levelup","5 phút"]]],
+   ["Flexing & Dancing Mastery","~45 phút",[["ky_1989","15 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]]],
+ ]],
+];
+
+const ytSearch = t => "https://www.youtube.com/results?search_query="+encodeURIComponent(t);
+const tabs = document.getElementById('tabs');
+const weeks = document.getElementById('weeks');
+
+SCHEDULE.forEach((wk,wi)=>{
+  const tab=document.createElement('div');
+  tab.className='tab'+(wi===0?' active':'');
+  tab.textContent='Tuần '+(wi+1);
+  tab.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.week').forEach(w=>w.classList.remove('active'));
+    tab.classList.add('active');document.getElementById('w'+wi).classList.add('active');};
+  tabs.appendChild(tab);
+
+  const w=document.createElement('div');
+  w.className='week'+(wi===0?' active':'');w.id='w'+wi;
+  w.innerHTML='<div class="week-title">'+wk[0]+'</div>';
+  wk[1].forEach((day,di)=>{
+    const [sess,dur,vids]=day;
+    const card=document.createElement('div');card.className='day';
+    const badge=di+1;
+    if(!vids){
+      card.innerHTML='<div class="rest"><div class="daybadge">'+badge+'</div>'+
+        '<div><div class="day-name">'+DAYS[di]+'</div><div class="sess">😴 Nghỉ ngơi tích cực — Phục hồi thể lực</div></div></div>';
+    }else{
+      let html='<div class="day-head"><div class="day-left"><div class="daybadge">'+badge+'</div>'+
+        '<div><div class="day-name">'+DAYS[di]+'</div><div class="sess">'+sess+'</div></div></div>'+
+        '<div class="dur">'+dur+'</div></div><div class="vids">';
+      vids.forEach((v,n)=>{const title=V[v[0]];
+        html+='<a class="vid" href="'+ytSearch(title)+'" target="_blank" rel="noopener">'+
+          '<span class="vnum">'+(n+1)+'</span><span class="vtitle">'+title+'</span>'+
+          '<span class="vdur">'+v[1]+'</span><span class="vplay">▶ Tìm</span></a>';});
+      html+='</div>';card.innerHTML=html;
+    }
+    w.appendChild(card);
+  });
+  weeks.appendChild(w);
+});
+</script>
+</body>
+</html>

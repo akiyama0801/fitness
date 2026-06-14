@@ -1,0 +1,316 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Choco//Kate Workout Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lịch tập 4 tuần - Kate 🐾
+X-WR-TIMEZONE:Asia/Ho_Chi_Minh
+BEGIN:VEVENT
+UID:kate-workout-w1d1-20260614@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260614T080000
+DTEND:20260614T084500
+SUMMARY:Kate W1D1: Upper Body & Core
+DESCRIPTION:1. Pamela Reif - 10 Min Upper Body + Booty Band: https://www.youtube.com/results?search_query=Pamela+Reif+-+10+Min+Upper+Body+%2B+Booty+Band\n2. Pamela Reif - 15 Min Complete Upper Body: https://www.youtube.com/results?search_query=Pamela+Reif+-+15+Min+Complete+Upper+Body\n3. Chloe Ting - 10 Min Flat Belly Abs Workout: https://www.youtube.com/results?search_query=Chloe+Ting+-+10+Min+Flat+Belly+Abs+Workout\n4. Chloe Ting - 10 Min Abs Workout Defined Abs: https://www.youtube.com/results?search_query=Chloe+Ting+-+10+Min+Abs+Workout+Defined+Abs
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w1d2-20260615@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260615T080000
+DTEND:20260615T084500
+SUMMARY:Kate W1D2: Boxing & Cardio HIIT
+DESCRIPTION:1. Nate Bower - 15 Min Boxing HIIT Workout: https://www.youtube.com/results?search_query=Nate+Bower+-+15+Min+Boxing+HIIT+Workout\n2. Teagan Dixon - 15 Min Cardio Boxing HIIT Workout: https://www.youtube.com/results?search_query=Teagan+Dixon+-+15+Min+Cardio+Boxing+HIIT+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w1d3-20260616@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260616T080000
+DTEND:20260616T085000
+SUMMARY:Kate W1D3: Glutes & Lower Body + Stretch
+DESCRIPTION:1. Pamela Reif - 15 Min Booty Workout Low Impact: https://www.youtube.com/results?search_query=Pamela+Reif+-+15+Min+Booty+Workout+Low+Impact\n2. Pamela Reif - 20 Min Booty and Legs With Weights: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Booty+and+Legs+With+Weights\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w1d4-20260617@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260617T080000
+DTEND:20260617T090000
+SUMMARY:Kate W1D4: Rest & Recovery
+DESCRIPTION:Nghỉ ngơi tích cực (Phục hồi thể lực)
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w1d5-20260618@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260618T080000
+DTEND:20260618T085000
+SUMMARY:Kate W1D5: Taylor Swift Dance & Hiphop
+DESCRIPTION:1. Kyra Pro - Taylor Swift Lover Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Lover+Era+Dance+Workout\n2. MadFit - 15 Min Taylor Swift Dance Party Workout: https://www.youtube.com/results?search_query=MadFit+-+15+Min+Taylor+Swift+Dance+Party+Workout\n3. The Fitness Marshall - Work It Missy Elliott Dance: https://www.youtube.com/results?search_query=The+Fitness+Marshall+-+Work+It+Missy+Elliott+Dance
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w1d6-20260619@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260619T080000
+DTEND:20260619T085500
+SUMMARY:Kate W1D6: Full Body HIIT & Strength
+DESCRIPTION:1. Pamela Reif - 20 Min Intense Full Body Workout: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Intense+Full+Body+Workout\n2. Chloe Ting - 15 Min Full Body HIIT No Jumping: https://www.youtube.com/results?search_query=Chloe+Ting+-+15+Min+Full+Body+HIIT+No+Jumping
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w1d7-20260620@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260620T080000
+DTEND:20260620T084500
+SUMMARY:Kate W1D7: Flexing & Dancing Mastery
+DESCRIPTION:1. Kyra Pro - Taylor Swift Red Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Red+Era+Dance+Workout\n2. Kyra Pro - Taylor Swift 1989 Walking Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+1989+Walking+Dance+Workout\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d1-20260621@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260621T080000
+DTEND:20260621T085200
+SUMMARY:Kate W2D1: Upper Body & Core
+DESCRIPTION:1. Pamela Reif - 20 Min Upper Body Bottles and Band: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Upper+Body+Bottles+and+Band\n2. Pamela Reif - 12 Min Pretty Abs and Arms: https://www.youtube.com/results?search_query=Pamela+Reif+-+12+Min+Pretty+Abs+and+Arms\n3. Chloe Ting - Get Abs in 2 Weeks Abs Challenge: https://www.youtube.com/results?search_query=Chloe+Ting+-+Get+Abs+in+2+Weeks+Abs+Challenge\n4. Chloe Ting - 10 Min Flat Belly Abs Workout: https://www.youtube.com/results?search_query=Chloe+Ting+-+10+Min+Flat+Belly+Abs+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d2-20260622@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260622T080000
+DTEND:20260622T084500
+SUMMARY:Kate W2D2: Boxing & Cardio HIIT
+DESCRIPTION:1. Nate Bower - 15 Min Boxing HIIT Workout: https://www.youtube.com/results?search_query=Nate+Bower+-+15+Min+Boxing+HIIT+Workout\n2. Nate Bower - 15 Min Morning Boxing Workout: https://www.youtube.com/results?search_query=Nate+Bower+-+15+Min+Morning+Boxing+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d3-20260623@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260623T080000
+DTEND:20260623T084500
+SUMMARY:Kate W2D3: Glutes & Lower Body + Stretch
+DESCRIPTION:1. Pamela Reif - 10 Min Glute Bridge Burnout: https://www.youtube.com/results?search_query=Pamela+Reif+-+10+Min+Glute+Bridge+Burnout\n2. Pamela Reif - 20 Min Booty and Legs With Weights: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Booty+and+Legs+With+Weights\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d4-20260624@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260624T080000
+DTEND:20260624T090000
+SUMMARY:Kate W2D4: Rest & Recovery
+DESCRIPTION:Nghỉ ngơi tích cực (Phục hồi thể lực)
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d5-20260625@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260625T080000
+DTEND:20260625T085000
+SUMMARY:Kate W2D5: Taylor Swift Dance & Hiphop
+DESCRIPTION:1. Kyra Pro - Taylor Swift Lover Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Lover+Era+Dance+Workout\n2. MadFit - Taylor Swift Midnights Dance Workout: https://www.youtube.com/results?search_query=MadFit+-+Taylor+Swift+Midnights+Dance+Workout\n3. The Fitness Marshall - Level Up Ciara Dance: https://www.youtube.com/results?search_query=The+Fitness+Marshall+-+Level+Up+Ciara+Dance
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d6-20260626@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260626T080000
+DTEND:20260626T085600
+SUMMARY:Kate W2D6: Full Body HIIT & Strength
+DESCRIPTION:1. Pamela Reif - 30 Min Abs and Booty Workout: https://www.youtube.com/results?search_query=Pamela+Reif+-+30+Min+Abs+and+Booty+Workout\n2. Chloe Ting - Get Abs in 2 Weeks Abs Challenge: https://www.youtube.com/results?search_query=Chloe+Ting+-+Get+Abs+in+2+Weeks+Abs+Challenge\n3. Chloe Ting - 15 Min Full Body HIIT No Jumping: https://www.youtube.com/results?search_query=Chloe+Ting+-+15+Min+Full+Body+HIIT+No+Jumping
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w2d7-20260627@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260627T080000
+DTEND:20260627T084500
+SUMMARY:Kate W2D7: Flexing & Dancing Mastery
+DESCRIPTION:1. MadFit - 15 Min Taylor Swift Dance Party Workout: https://www.youtube.com/results?search_query=MadFit+-+15+Min+Taylor+Swift+Dance+Party+Workout\n2. Kyra Pro - Taylor Swift Red Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Red+Era+Dance+Workout\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d1-20260628@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260628T080000
+DTEND:20260628T084600
+SUMMARY:Kate W3D1: Upper Body & Core
+DESCRIPTION:1. Pamela Reif - 15 Min Complete Upper Body: https://www.youtube.com/results?search_query=Pamela+Reif+-+15+Min+Complete+Upper+Body\n2. Pamela Reif - 10 Min Upper Body + Booty Band: https://www.youtube.com/results?search_query=Pamela+Reif+-+10+Min+Upper+Body+%2B+Booty+Band\n3. Chloe Ting - Get Abs in 2 Weeks Abs Challenge: https://www.youtube.com/results?search_query=Chloe+Ting+-+Get+Abs+in+2+Weeks+Abs+Challenge\n4. Chloe Ting - 10 Min Flat Belly Abs Workout: https://www.youtube.com/results?search_query=Chloe+Ting+-+10+Min+Flat+Belly+Abs+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d2-20260629@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260629T080000
+DTEND:20260629T084500
+SUMMARY:Kate W3D2: Boxing & Cardio HIIT
+DESCRIPTION:1. Teagan Dixon - 15 Min Cardio Boxing HIIT Workout: https://www.youtube.com/results?search_query=Teagan+Dixon+-+15+Min+Cardio+Boxing+HIIT+Workout\n2. Nate Bower - 15 Min Boxing HIIT Workout: https://www.youtube.com/results?search_query=Nate+Bower+-+15+Min+Boxing+HIIT+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d3-20260630@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260630T080000
+DTEND:20260630T085000
+SUMMARY:Kate W3D3: Glutes & Lower Body + Stretch
+DESCRIPTION:1. Pamela Reif - 15 Min Booty Workout Low Impact: https://www.youtube.com/results?search_query=Pamela+Reif+-+15+Min+Booty+Workout+Low+Impact\n2. Pamela Reif - 10 Min Glute Bridge Burnout: https://www.youtube.com/results?search_query=Pamela+Reif+-+10+Min+Glute+Bridge+Burnout\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d4-20260701@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260701T080000
+DTEND:20260701T090000
+SUMMARY:Kate W3D4: Rest & Recovery
+DESCRIPTION:Nghỉ ngơi tích cực (Phục hồi thể lực)
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d5-20260702@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260702T080000
+DTEND:20260702T085000
+SUMMARY:Kate W3D5: Taylor Swift Dance & Hiphop
+DESCRIPTION:1. Kyra Pro - Taylor Swift Lover Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Lover+Era+Dance+Workout\n2. Kyra Pro - Taylor Swift 1989 Walking Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+1989+Walking+Dance+Workout\n3. The Fitness Marshall - Work It Missy Elliott Dance: https://www.youtube.com/results?search_query=The+Fitness+Marshall+-+Work+It+Missy+Elliott+Dance
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d6-20260703@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260703T080000
+DTEND:20260703T085000
+SUMMARY:Kate W3D6: Full Body HIIT & Strength
+DESCRIPTION:1. Pamela Reif - 20 Min Intense Full Body Workout: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Intense+Full+Body+Workout\n2. Pamela Reif - 30 Min Abs and Booty Workout: https://www.youtube.com/results?search_query=Pamela+Reif+-+30+Min+Abs+and+Booty+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w3d7-20260704@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260704T080000
+DTEND:20260704T084500
+SUMMARY:Kate W3D7: Flexing & Dancing Mastery
+DESCRIPTION:1. MadFit - Taylor Swift Midnights Dance Workout: https://www.youtube.com/results?search_query=MadFit+-+Taylor+Swift+Midnights+Dance+Workout\n2. MadFit - 15 Min Taylor Swift Dance Party Workout: https://www.youtube.com/results?search_query=MadFit+-+15+Min+Taylor+Swift+Dance+Party+Workout\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d1-20260705@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260705T080000
+DTEND:20260705T085500
+SUMMARY:Kate W4D1: Upper Body & Core
+DESCRIPTION:1. Pamela Reif - 20 Min Upper Body Bottles and Band: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Upper+Body+Bottles+and+Band\n2. Pamela Reif - 15 Min Complete Upper Body: https://www.youtube.com/results?search_query=Pamela+Reif+-+15+Min+Complete+Upper+Body\n3. Chloe Ting - 11 Line Abs Workout: https://www.youtube.com/results?search_query=Chloe+Ting+-+11+Line+Abs+Workout\n4. Chloe Ting - 10 Min Abs Workout Defined Abs: https://www.youtube.com/results?search_query=Chloe+Ting+-+10+Min+Abs+Workout+Defined+Abs
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d2-20260706@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260706T080000
+DTEND:20260706T084500
+SUMMARY:Kate W4D2: Boxing & Cardio HIIT
+DESCRIPTION:1. Nate Bower - 15 Min Morning Boxing Workout: https://www.youtube.com/results?search_query=Nate+Bower+-+15+Min+Morning+Boxing+Workout\n2. Teagan Dixon - 15 Min Cardio Boxing HIIT Workout: https://www.youtube.com/results?search_query=Teagan+Dixon+-+15+Min+Cardio+Boxing+HIIT+Workout
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d3-20260707@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260707T080000
+DTEND:20260707T085500
+SUMMARY:Kate W4D3: Glutes & Lower Body + Stretch
+DESCRIPTION:1. Pamela Reif - 20 Min Booty and Legs With Weights: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Booty+and+Legs+With+Weights\n2. Pamela Reif - 10 Min Booty Pump Squat Free: https://www.youtube.com/results?search_query=Pamela+Reif+-+10+Min+Booty+Pump+Squat+Free\n3. Pamela Reif - 10 Min Glute Bridge Burnout: https://www.youtube.com/results?search_query=Pamela+Reif+-+10+Min+Glute+Bridge+Burnout\n4. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d4-20260708@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260708T080000
+DTEND:20260708T090000
+SUMMARY:Kate W4D4: Rest & Recovery
+DESCRIPTION:Nghỉ ngơi tích cực (Phục hồi thể lực)
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d5-20260709@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260709T080000
+DTEND:20260709T085000
+SUMMARY:Kate W4D5: Taylor Swift Dance & Hiphop
+DESCRIPTION:1. Kyra Pro - Taylor Swift Lover Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Lover+Era+Dance+Workout\n2. Kyra Pro - Taylor Swift Red Era Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+Red+Era+Dance+Workout\n3. The Fitness Marshall - Level Up Ciara Dance: https://www.youtube.com/results?search_query=The+Fitness+Marshall+-+Level+Up+Ciara+Dance
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d6-20260710@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260710T080000
+DTEND:20260710T085500
+SUMMARY:Kate W4D6: Full Body HIIT & Strength
+DESCRIPTION:1. Pamela Reif - 30 Min Abs and Booty Workout: https://www.youtube.com/results?search_query=Pamela+Reif+-+30+Min+Abs+and+Booty+Workout\n2. Pamela Reif - 20 Min Intense Full Body Workout: https://www.youtube.com/results?search_query=Pamela+Reif+-+20+Min+Intense+Full+Body+Workout\n3. The Fitness Marshall - Level Up Ciara Dance: https://www.youtube.com/results?search_query=The+Fitness+Marshall+-+Level+Up+Ciara+Dance
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:kate-workout-w4d7-20260711@choco.fitness
+DTSTAMP:20260614T125107Z
+DTSTART:20260711T080000
+DTEND:20260711T084500
+SUMMARY:Kate W4D7: Flexing & Dancing Mastery
+DESCRIPTION:1. Kyra Pro - Taylor Swift 1989 Walking Dance Workout: https://www.youtube.com/results?search_query=Kyra+Pro+-+Taylor+Swift+1989+Walking+Dance+Workout\n2. MadFit - 15 Min Taylor Swift Dance Party Workout: https://www.youtube.com/results?search_query=MadFit+-+15+Min+Taylor+Swift+Dance+Party+Workout\n3. Mady Morrison - 15 Min Full Body Stretch: https://www.youtube.com/results?search_query=Mady+Morrison+-+15+Min+Full+Body+Stretch
+LOCATION:Home / Gym
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR
