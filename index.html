@@ -94,7 +94,7 @@
   <div class="note">
     <b>Cách dùng:</b> Mỗi bài tập là một <b>link tìm kiếm YouTube</b> — bấm vào sẽ mở trang kết quả đúng tên bài,
     chị chọn video đầu tiên (kênh chính chủ) để tập. Link luôn sống, không bao giờ chết.
-    Lịch bắt đầu <b>Thứ 4 01/07/2026</b>, nghỉ ngơi <b>Thứ 2</b> hàng tuần. Chị có thể tích chọn ô bên cạnh để xác nhận đã tập xong!
+    Nghỉ <b>Thứ 2</b> hàng tuần. Tập từ <b>Thứ 3→CN</b> (bắt đầu 01/07/2026). Chị có thể tích chọn ô để xác nhận đã tập xong!
   </div>
 
   <div class="tabs" id="tabs"></div>
@@ -104,8 +104,8 @@
 </div>
 
 <script>
-const DAYS = ["Thứ 4","Thứ 5","Thứ 6","Thứ 7","Chủ Nhật","Thứ 2","Thứ 3"];
-const START_DATE = new Date('2026-07-01');
+const DAYS = ["Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7","Chủ Nhật"];
+const START_DATE = new Date('2026-06-29');
 
 const V = {
  pr_upper10:"Pamela Reif - 10 Min Upper Body + Booty Band",
@@ -138,51 +138,51 @@ const V = {
 
 const DETAILED_SCHEDULE = [
   {
-    title: "TUẦN 1 · 01/07 ĐẾN 07/07/2026",
+    title: "TUẦN 1 · 29/06 ĐẾN 05/07/2026",
     days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["ky_red","15 phút"],["ky_1989","15 phút"],["mm_stretch15","15 phút"]] },
       { name: "Upper Body & Core", duration: "~45 phút", vids: [["pr_upper10","10 phút"],["pr_upper15","15 phút"],["ct_flatbelly10","10 phút"],["ct_defined10","10 phút"]] },
       { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["nb_box15","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]] },
       { name: "Glutes & Lower Body + Stretch", duration: "~50 phút", vids: [["pr_booty15","15 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]] },
       { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["mf_tsparty","15 phút"],["fm_workit","5 phút"]] },
-      { name: "Full Body HIIT & Strength", duration: "~55 phút", vids: [["pr_full20","Tập 2 vòng = 40 phút"],["ct_fullhiit15","15 phút"]] },
-      { name: "Active Recovery", duration: "-", vids: null },
-      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["ky_red","15 phút"],["ky_1989","15 phút"],["mm_stretch15","15 phút"]] }
+      { name: "Full Body HIIT & Strength", duration: "~55 phút", vids: [["pr_full20","Tập 2 vòng = 40 phút"],["ct_fullhiit15","15 phút"]] }
     ]
   },
   {
-    title: "TUẦN 2 · 08/07 ĐẾN 14/07/2026",
+    title: "TUẦN 2 · 06/07 ĐẾN 12/07/2026",
     days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["mf_tsparty","15 phút"],["ky_red","15 phút"],["mm_stretch15","15 phút"]] },
       { name: "Upper Body & Core", duration: "~52 phút", vids: [["pr_upper20","20 phút"],["pr_abs_arms12","12 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]] },
       { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["nb_box15","Tập 2 vòng = 30 phút"],["nb_morning","15 phút"]] },
       { name: "Glutes & Lower Body + Stretch", duration: "~45 phút", vids: [["pr_glute10","10 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]] },
       { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["mf_midnights","10 phút"],["fm_levelup","Tập 2 vòng = 10 phút"]] },
-      { name: "Full Body HIIT & Strength", duration: "~56 phút", vids: [["pr_absbooty30","30 phút"],["ct_getabs","11 phút"],["ct_fullhiit15","15 phút"]] },
-      { name: "Active Recovery", duration: "-", vids: null },
-      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["mf_tsparty","15 phút"],["ky_red","15 phút"],["mm_stretch15","15 phút"]] }
+      { name: "Full Body HIIT & Strength", duration: "~56 phút", vids: [["pr_absbooty30","30 phút"],["ct_getabs","11 phút"],["ct_fullhiit15","15 phút"]] }
     ]
   },
   {
-    title: "TUẦN 3 · 15/07 ĐẾN 21/07/2026",
+    title: "TUẦN 3 · 13/07 ĐẾN 19/07/2026",
     days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["mf_midnights","10 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]] },
       { name: "Upper Body & Core", duration: "~46 phút", vids: [["pr_upper15","15 phút"],["pr_upper10","10 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]] },
       { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["td_box15","Tập 2 vòng = 30 phút"],["nb_box15","15 phút"]] },
       { name: "Glutes & Lower Body + Stretch", duration: "~50 phút", vids: [["pr_booty15","15 phút"],["pr_glute10","Tập 2 vòng = 20 phút"],["mm_stretch15","15 phút"]] },
       { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["ky_1989","15 phút"],["fm_workit","5 phút"]] },
-      { name: "Full Body HIIT & Strength", duration: "~50 phút", vids: [["pr_full20","20 phút"],["pr_absbooty30","30 phút"]] },
-      { name: "Active Recovery", duration: "-", vids: null },
-      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["mf_midnights","10 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]] }
+      { name: "Full Body HIIT & Strength", duration: "~50 phút", vids: [["pr_full20","20 phút"],["pr_absbooty30","30 phút"]] }
     ]
   },
   {
-    title: "TUẦN 4 · 22/07 ĐẾN 28/07/2026",
+    title: "TUẦN 4 · 20/07 ĐẾN 26/07/2026",
     days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["ky_1989","15 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]] },
       { name: "Upper Body & Core", duration: "~55 phút", vids: [["pr_upper20","20 phút"],["pr_upper15","15 phút"],["ct_lineabs","10 phút"],["ct_defined10","10 phút"]] },
       { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["nb_morning","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]] },
       { name: "Glutes & Lower Body + Stretch", duration: "~55 phút", vids: [["pr_legs20","20 phút"],["pr_bootypump10","10 phút"],["pr_glute10","10 phút"],["mm_stretch15","15 phút"]] },
       { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["ky_red","15 phút"],["fm_levelup","5 phút"]] },
-      { name: "Full Body HIIT & Strength", duration: "~55 phút", vids: [["pr_absbooty30","30 phút"],["pr_full20","20 phút"],["fm_levelup","5 phút"]] },
-      { name: "Active Recovery", duration: "-", vids: null },
-      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["ky_1989","15 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]] }
+      { name: "Full Body HIIT & Strength", duration: "~55 phút", vids: [["pr_absbooty30","30 phút"],["pr_full20","20 phút"],["fm_levelup","5 phút"]] }
     ]
   }
 ];
