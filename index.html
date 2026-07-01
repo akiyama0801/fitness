@@ -39,9 +39,11 @@
   .day{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden}
   .day-head{display:flex;align-items:center;justify-content:space-between;gap:10px;
     padding:14px 16px;background:var(--card2)}
-  .day-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .day-left{display:flex;align-items:center;gap:12px;min-width:0;width:100%}
   .daybadge{flex-shrink:0;width:42px;height:42px;border-radius:10px;display:flex;align-items:center;
     justify-content:center;font-weight:800;font-size:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
+  .day-check-wrapper{display:flex;align-items:center;margin-right:4px}
+  .day-check{width:22px;height:22px;accent-color:var(--accent);cursor:pointer;border-radius:6px}
   .day-name{font-size:12px;color:var(--muted)}
   .sess{font-size:15px;font-weight:700}
   .dur{flex-shrink:0;font-size:12px;font-weight:700;color:var(--accent);background:rgba(255,93,162,.12);
@@ -55,7 +57,8 @@
   .vtitle{flex:1;font-size:14px;line-height:1.4}
   .vplay{flex-shrink:0;color:var(--accent);font-size:12px;font-weight:700;display:flex;align-items:center;gap:5px}
   .vdur{flex-shrink:0;font-size:12px;color:var(--muted)}
-  .rest{padding:18px 16px;color:var(--rest);font-weight:600;font-size:14px;display:flex;align-items:center;gap:10px}
+  .rest{padding:14px 16px;color:var(--rest);font-weight:600;font-size:14px;display:flex;align-items:center;justify-content:space-between;width:100%}
+  .rest-left{display:flex;align-items:center;gap:12px}
   .rest .daybadge{background:var(--rest)}
   footer{text-align:center;color:var(--muted);font-size:13px;margin-top:26px}
   @media(max-width:560px){.vdur{display:none}.vtitle{font-size:13px}}
@@ -75,7 +78,7 @@
   <div class="note">
     <b>Cách dùng:</b> Mỗi bài tập là một <b>link tìm kiếm YouTube</b> — bấm vào sẽ mở trang kết quả đúng tên bài,
     chị chọn video đầu tiên (kênh chính chủ) để tập. Link luôn sống, không bao giờ chết.
-    Tuần bắt đầu <b>Chủ Nhật</b>, nghỉ ngơi <b>Thứ 4</b>.
+    Lịch bắt đầu <b>Thứ 4 01/07/2026</b>, nghỉ ngơi <b>Thứ 4</b> hàng tuần. Chị có thể tích chọn ô bên cạnh để xác nhận đã tập xong!
   </div>
 
   <div class="tabs" id="tabs"></div>
@@ -85,7 +88,9 @@
 </div>
 
 <script>
-const DAYS = ["Chủ Nhật","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"];
+const DAYS = ["Thứ 4","Thứ 5","Thứ 6","Thứ 7","Chủ Nhật","Thứ 2","Thứ 3"];
+const START_DATE = new Date('2026-07-01');
+
 const V = {
  pr_upper10:"Pamela Reif - 10 Min Upper Body + Booty Band",
  pr_upper15:"Pamela Reif - 15 Min Complete Upper Body",
@@ -116,80 +121,177 @@ const V = {
 };
 const REST = ["Active Recovery","-",null];
 const SCHEDULE = [
- ["TUẦN 1 · TĂNG SỨC BỀN & ĐỐT MỠ SIẾT CƠ (ROUND 1)",[
-   ["Upper Body & Core","~45 phút",[["pr_upper10","10 phút"],["pr_upper15","15 phút"],["ct_flatbelly10","10 phút"],["ct_defined10","10 phút"]]],
-   ["Boxing & Cardio HIIT","~45 phút",[["nb_box15","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]]],
-   ["Glutes & Lower Body + Stretch","~50 phút",[["pr_booty15","15 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]]],
-   REST,
-   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["mf_tsparty","15 phút"],["fm_workit","5 phút"]]],
-   ["Full Body HIIT & Strength","~55 phút",[["pr_full20","Tập 2 vòng = 40 phút"],["ct_fullhiit15","15 phút"]]],
-   ["Flexing & Dancing Mastery","~45 phút",[["ky_red","15 phút"],["ky_1989","15 phút"],["mm_stretch15","15 phút"]]],
- ]],
- ["TUẦN 2 · TẠO NÉT & PHÁT TRIỂN CƠ BẮP (ROUND 2)",[
-   ["Upper Body & Core","~52 phút",[["pr_upper20","20 phút"],["pr_abs_arms12","12 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]]],
-   ["Boxing & Cardio HIIT","~45 phút",[["nb_box15","Tập 2 vòng = 30 phút"],["nb_morning","15 phút"]]],
-   ["Glutes & Lower Body + Stretch","~45 phút",[["pr_glute10","10 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]]],
-   REST,
-   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["mf_midnights","10 phút"],["fm_levelup","Tập 2 vòng = 10 phút"]]],
-   ["Full Body HIIT & Strength","~56 phút",[["pr_absbooty30","30 phút"],["ct_getabs","11 phút"],["ct_fullhiit15","15 phút"]]],
-   ["Flexing & Dancing Mastery","~45 phút",[["mf_tsparty","15 phút"],["ky_red","15 phút"],["mm_stretch15","15 phút"]]],
- ]],
- ["TUẦN 3 · THỬ THÁCH NÂNG CAO & BÙNG NỔ THỂ LỰC (ROUND 3)",[
-   ["Upper Body & Core","~46 phút",[["pr_upper15","15 phút"],["pr_upper10","10 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]]],
-   ["Boxing & Cardio HIIT","~45 phút",[["td_box15","Tập 2 vòng = 30 phút"],["nb_box15","15 phút"]]],
-   ["Glutes & Lower Body + Stretch","~50 phút",[["pr_booty15","15 phút"],["pr_glute10","Tập 2 vòng = 20 phút"],["mm_stretch15","15 phút"]]],
-   REST,
-   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["ky_1989","15 phút"],["fm_workit","5 phút"]]],
-   ["Full Body HIIT & Strength","~50 phút",[["pr_full20","20 phút"],["pr_absbooty30","30 phút"]]],
-   ["Flexing & Dancing Mastery","~45 phút",[["mf_midnights","10 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]]],
- ]],
- ["TUẦN 4 · SIẾT CƠ ĐA TẦNG & TÁI CẤU TRÚC BODY (ROUND 4)",[
-   ["Upper Body & Core","~55 phút",[["pr_upper20","20 phút"],["pr_upper15","15 phút"],["ct_lineabs","10 phút"],["ct_defined10","10 phút"]]],
-   ["Boxing & Cardio HIIT","~45 phút",[["nb_morning","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]]],
-   ["Glutes & Lower Body + Stretch","~55 phút",[["pr_legs20","20 phút"],["pr_bootypump10","10 phút"],["pr_glute10","10 phút"],["mm_stretch15","15 phút"]]],
-   REST,
-   ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["ky_red","15 phút"],["fm_levelup","5 phút"]]],
-   ["Full Body HIIT & Strength","~55 phút",[["pr_absbooty30","30 phút"],["pr_full20","20 phút"],["fm_levelup","5 phút"]]],
-   ["Flexing & Dancing Mastery","~45 phút",[["ky_1989","15 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]]],
- ]],
+ ["TUẦN 1 · 01/07 ĐẾN 07/07/2026",[
+    REST,
+    ["Upper Body & Core","~45 phút",[["pr_upper10","10 phút"],["pr_upper15","15 phút"],["ct_flatbelly10","10 phút"],["ct_defined10","10 phút"]]],
+    ["Boxing & Cardio HIIT","~45 phút",[["nb_box15","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]]],
+    ["Glutes & Lower Body + Stretch","~50 phút",[["pr_booty15","15 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]]],
+    ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["mf_tsparty","15 phút"],["fm_workit","5 phút"]]],
+    ["Full Body HIIT & Strength","~55 phút",[["pr_full20","Tập 2 vòng = 40 phút"],["ct_fullhiit15","15 phút"]]],
+    ["Flexing & Dancing Mastery","~45 phút",[["ky_red","15 phút"],["ky_1989","15 phút"],["mm_stretch15","15 phút"]]],
+  ]],
+ ["TUẦN 2 · 08/07 ĐẾN 14/07/2026",[
+    REST,
+    ["Upper Body & Core","~52 phút",[["pr_upper20","20 phút"],["pr_abs_arms12","12 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]]],
+    ["Boxing & Cardio HIIT","~45 phút",[["nb_box15","Tập 2 vòng = 30 phút"],["nb_morning","15 phút"]]],
+    ["Glutes & Lower Body + Stretch","~45 phút",[["pr_glute10","10 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]]],
+    ["Taylor Swift Dance & Hiphop","~50 phút",[["ky_lover","30 phút"],["mf_midnights","10 phút"],["fm_levelup","Tập 2 vòng = 10 phút"]]],
+    ["Full Body HIIT & Strength","~56 phút",[["pr_absbooty30","30 phút"],["ct_getabs","11 phút"],["ct_fullhiit15","15 phút"]]],
+    ["Flexing & Dancing Mastery","~45 phút",[["mf_tsparty","15 phút"],["ky_red","15 phút"],["mm_stretch15","15 phút"]]],
+  ]],
+ ["TUẦN 3 · 15/07 ĐẾN 21/07/2026",[
+    REST,
+    ["Upper Body & Core","~46 phút",[["pr_upper15","15 phút"],["pr_upper10","10 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]]],
+    ["Boxing & Cardio HIIT","~45 phút",[["td_box15","Tập 2 vòng = 30 phút"],["nb_box15","15 phút"]]],
+    ["Glutes & Lower Body + Stretch","~50 phút",[["pr_booty15","15 phút"],["pr_glute10","Tập 2 vòng = 20 phút"],["mm_stretch15","15 phút"]]],
+    REST, // wait, rest day in week 3 is Wednesday, which is REST at index 0. Wait!
+    // If the week starts on Wednesday, index 0 is Wednesday (rest day).
+    // Let's make sure the array lists Wednesday (REST) as index 0.
+  ]],
+];
+
+// Let's rewrite the array properly to reflect all 4 weeks:
+const DETAILED_SCHEDULE = [
+  {
+    title: "TUẦN 1 · 01/07 ĐẾN 07/07/2026",
+    days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Upper Body & Core", duration: "~45 phút", vids: [["pr_upper10","10 phút"],["pr_upper15","15 phút"],["ct_flatbelly10","10 phút"],["ct_defined10","10 phút"]] },
+      { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["nb_box15","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]] },
+      { name: "Glutes & Lower Body + Stretch", duration: "~50 phút", vids: [["pr_booty15","15 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]] },
+      { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["mf_tsparty","15 phút"],["fm_workit","5 phút"]] },
+      { name: "Full Body HIIT & Strength", duration: "~55 phút", vids: [["pr_full20","Tập 2 vòng = 40 phút"],["ct_fullhiit15","15 phút"]] },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["ky_red","15 phút"],["ky_1989","15 phút"],["mm_stretch15","15 phút"]] }
+    ]
+  },
+  {
+    title: "TUẦN 2 · 08/07 ĐẾN 14/07/2026",
+    days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Upper Body & Core", duration: "~52 phút", vids: [["pr_upper20","20 phút"],["pr_abs_arms12","12 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]] },
+      { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["nb_box15","Tập 2 vòng = 30 phút"],["nb_morning","15 phút"]] },
+      { name: "Glutes & Lower Body + Stretch", duration: "~45 phút", vids: [["pr_glute10","10 phút"],["pr_legs20","20 phút"],["mm_stretch15","15 phút"]] },
+      { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["mf_midnights","10 phút"],["fm_levelup","Tập 2 vòng = 10 phút"]] },
+      { name: "Full Body HIIT & Strength", duration: "~56 phút", vids: [["pr_absbooty30","30 phút"],["ct_getabs","11 phút"],["ct_fullhiit15","15 phút"]] },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["mf_tsparty","15 phút"],["ky_red","15 phút"],["mm_stretch15","15 phút"]] }
+    ]
+  },
+  {
+    title: "TUẦN 3 · 15/07 ĐẾN 21/07/2026",
+    days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Upper Body & Core", duration: "~46 phút", vids: [["pr_upper15","15 phút"],["pr_upper10","10 phút"],["ct_getabs","11 phút"],["ct_flatbelly10","10 phút"]] },
+      { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["td_box15","Tập 2 vòng = 30 phút"],["nb_box15","15 phút"]] },
+      { name: "Glutes & Lower Body + Stretch", duration: "~50 phút", vids: [["pr_booty15","15 phút"],["pr_glute10","Tập 2 vòng = 20 phút"],["mm_stretch15","15 phút"]] },
+      { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["ky_1989","15 phút"],["fm_workit","5 phút"]] },
+      { name: "Full Body HIIT & Strength", duration: "~50 phút", vids: [["pr_full20","20 phút"],["pr_absbooty30","30 phút"]] },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["mf_midnights","10 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]] }
+    ]
+  },
+  {
+    title: "TUẦN 4 · 22/07 ĐẾN 28/07/2026",
+    days: [
+      { name: "Active Recovery", duration: "-", vids: null },
+      { name: "Upper Body & Core", duration: "~55 phút", vids: [["pr_upper20","20 phút"],["pr_upper15","15 phút"],["ct_lineabs","10 phút"],["ct_defined10","10 phút"]] },
+      { name: "Boxing & Cardio HIIT", duration: "~45 phút", vids: [["nb_morning","Tập 2 vòng = 30 phút"],["td_box15","15 phút"]] },
+      { name: "Glutes & Lower Body + Stretch", duration: "~55 phút", vids: [["pr_legs20","20 phút"],["pr_bootypump10","10 phút"],["pr_glute10","10 phút"],["mm_stretch15","15 phút"]] },
+      { name: "Taylor Swift Dance & Hiphop", duration: "~50 phút", vids: [["ky_lover","30 phút"],["ky_red","15 phút"],["fm_levelup","5 phút"]] },
+      { name: "Full Body HIIT & Strength", duration: "~55 phút", vids: [["pr_absbooty30","30 phút"],["pr_full20","20 phút"],["fm_levelup","5 phút"]] },
+      { name: "Flexing & Dancing Mastery", duration: "~45 phút", vids: [["ky_1989","15 phút"],["mf_tsparty","15 phút"],["mm_stretch15","15 phút"]] }
+    ]
+  }
 ];
 
 const ytSearch = t => "https://www.youtube.com/results?search_query="+encodeURIComponent(t);
 const tabs = document.getElementById('tabs');
 const weeks = document.getElementById('weeks');
 
-SCHEDULE.forEach((wk,wi)=>{
+const formatDate = (date) => {
+  const dd = String(date.getDate()).padStart(2, '0');
+  const mm = String(date.getMonth() + 1).padStart(2, '0');
+  return `${dd}/${mm}`;
+};
+
+DETAILED_SCHEDULE.forEach((wk,wi)=>{
   const tab=document.createElement('div');
   tab.className='tab'+(wi===0?' active':'');
   tab.textContent='Tuần '+(wi+1);
-  tab.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  tab.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
     document.querySelectorAll('.week').forEach(w=>w.classList.remove('active'));
-    tab.classList.add('active');document.getElementById('w'+wi).classList.add('active');};
+    tab.classList.add('active');
+    document.getElementById('w'+wi).classList.add('active');
+  };
   tabs.appendChild(tab);
 
   const w=document.createElement('div');
   w.className='week'+(wi===0?' active':'');w.id='w'+wi;
-  w.innerHTML='<div class="week-title">'+wk[0]+'</div>';
-  wk[1].forEach((day,di)=>{
-    const [sess,dur,vids]=day;
+  w.innerHTML='<div class="week-title">'+wk.title+'</div>';
+  
+  wk.days.forEach((day,di)=>{
+    const {name, duration, vids}=day;
     const card=document.createElement('div');card.className='day';
     const badge=di+1;
+    
+    const dayDate = new Date(START_DATE.getTime() + (wi * 7 + di) * 24 * 60 * 60 * 1000);
+    const dateStr = formatDate(dayDate);
+    const storageId = `kate-workout-w${wi}-d${di}`;
+    
     if(!vids){
-      card.innerHTML='<div class="rest"><div class="daybadge">'+badge+'</div>'+
-        '<div><div class="day-name">'+DAYS[di]+'</div><div class="sess">😴 Nghỉ ngơi tích cực — Phục hồi thể lực</div></div></div>';
+      card.innerHTML=`
+        <div class="rest">
+          <div class="rest-left">
+            <div class="day-check-wrapper">
+              <input type="checkbox" class="day-check" data-id="${storageId}">
+            </div>
+            <div class="daybadge">${badge}</div>
+            <div>
+              <div class="day-name">${DAYS[di]} (${dateStr})</div>
+              <div class="sess">😴 Nghỉ ngơi tích cực — Phục hồi thể lực</div>
+            </div>
+          </div>
+        </div>`;
     }else{
-      let html='<div class="day-head"><div class="day-left"><div class="daybadge">'+badge+'</div>'+
-        '<div><div class="day-name">'+DAYS[di]+'</div><div class="sess">'+sess+'</div></div></div>'+
-        '<div class="dur">'+dur+'</div></div><div class="vids">';
-      vids.forEach((v,n)=>{const title=V[v[0]];
-        html+='<a class="vid" href="'+ytSearch(title)+'" target="_blank" rel="noopener">'+
-          '<span class="vnum">'+(n+1)+'</span><span class="vtitle">'+title+'</span>'+
-          '<span class="vdur">'+v[1]+'</span><span class="vplay">▶ Tìm</span></a>';});
-      html+='</div>';card.innerHTML=html;
+      let html=`
+        <div class="day-head">
+          <div class="day-left">
+            <div class="day-check-wrapper">
+              <input type="checkbox" class="day-check" data-id="${storageId}">
+            </div>
+            <div class="daybadge">${badge}</div>
+            <div>
+              <div class="day-name">${DAYS[di]} (${dateStr})</div>
+              <div class="sess">${name}</div>
+            </div>
+          </div>
+          <div class="dur">${duration}</div>
+        </div>
+        <div class="vids">`;
+      vids.forEach((v,n)=>{
+        const title=V[v[0]];
+        html+=`
+          <a class="vid" href="${ytSearch(title)}" target="_blank" rel="noopener">
+            <span class="vnum">${n+1}</span>
+            <span class="vtitle">${title}</span>
+            <span class="vdur">${v[1]}</span>
+            <span class="vplay">▶ Tìm</span>
+          </a>`;
+      });
+      html+='</div>';
+      card.innerHTML=html;
     }
     w.appendChild(card);
   });
   weeks.appendChild(w);
+});
+
+// Setup checkbox state listeners and restore values
+document.querySelectorAll('.day-check').forEach(chk => {
+  const id = chk.getAttribute('data-id');
+  chk.checked = localStorage.getItem(id) === 'true';
+  chk.addEventListener('change', () => {
+    localStorage.setItem(id, chk.checked);
+  });
 });
 </script>
 </body>
